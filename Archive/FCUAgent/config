@@ -1,0 +1,105 @@
+{
+  
+  "cratedb_config": {
+    "host": "localhost",
+    "port": "4201",
+    "table_name": "raw_data"
+  },
+  
+  "automation": {
+    "aPMV_min": 0,
+    "aPMV_target": 0.25,
+    "aPMV_max": 0.5,
+    "rH_max": 60,
+    "trigger_interval": 2,  
+    "lookback_interval": 15,  
+    "feedback_expired_minutes": 15,
+    "feedback_mqtt_topic": "rl_correct/subiot/example/command"
+  },
+  
+  "apmv": {
+    "vr": 0.1,
+    "met": 1.1,
+    "clo": 0.7,
+    "a_coefficient": 0.2
+  },
+  
+  "thermal_zone_mapping": {
+    "Floor 1: Hall area": {
+      "fcu_device_ids": ["ac_FCU-101-3", "ac_FCU-101-4"],
+      "iaq_device_ids": ["ebd302a674c3bf1a00nixx"]
+    },
+    "Floor 1: Meeting room 1": {
+      "fcu_device_ids": ["ac_FCU-101-2"],
+      "iaq_device_ids": ["ebaa186a60f8833e4dcziw"]
+    },
+    "Floor 1: Meeting room 2": {
+      "fcu_device_ids": ["ac_FCU-101-1"],
+      "iaq_device_ids": ["eb7cfcbeaedc26dd89d3ql"]
+    },
+    "Floor 2: Meeting room 1": {
+      "fcu_device_ids": ["ac_FCU-2-05"],
+      "iaq_device_ids": ["ebcd4b61dea6f3cfc7pqrh"]
+    },
+    "Floor 2: Meeting room 2": {
+      "fcu_device_ids": ["ac_FCU-2-06"],
+      "iaq_device_ids": ["eb00d4aed83a80fed6crci"]
+    },
+    "Floor 2: Guest room": {
+      "fcu_device_ids": ["ac_FCU-2-02"],
+      "iaq_device_ids": ["ebc6d9ccb34b7c1193jlov"]
+    },
+    "Floor 2: Conference room": {
+      "fcu_device_ids": ["ac_FCU-2-01"],
+      "iaq_device_ids": ["eb5c6ff6a5cfd06550yy1z"]
+    },
+    "Floor 2: Lift Hall": {
+      "fcu_device_ids": ["ac_FCU-2-03", "ac_FCU-2-04"],
+      "iaq_device_ids": ["eb36ea08da9433df3ahkvd"]
+    },
+    "Floor 2: Triangle room": {
+      "fcu_device_ids": ["ac_FCU-2-16"],
+      "iaq_device_ids": ["eb1ca8fb2f1c913472to7o"]
+    },
+    "Floor 2: Main room 1": {
+      "fcu_device_ids": ["ac_FCU-2-09", "ac_FCU-2-10", "ac_FCU-2-11"],
+      "iaq_device_ids": ["ebf07b9d3cbaffcc86ejzv"]
+    },
+    "Floor 2: Main room 2": {
+      "fcu_device_ids": ["ac_FCU-2-12", "ac_FCU-2-13"],
+      "iaq_device_ids": ["ebf9b609ed6478144byhkj"]
+    },
+    "Floor 2: Main room 3": {
+      "fcu_device_ids": ["ac_FCU-2-07", "ac_FCU-2-08", "ac_FCU-2-14"],
+      "iaq_device_ids": ["eb14f03f3aa4536b5bwxxr"]
+    },
+    "Floor 2: Main room 4": {
+      "fcu_device_ids": ["ac_FCU-2-15"],
+      "iaq_device_ids": ["eb4d1a7ec49c8052bcrzhf"]
+    },
+    "Floor 3: Life Hall": {
+      "fcu_device_ids": ["ac_FCU-3-01", "ac_FCU-3-02"],
+      "iaq_device_ids": ["eb5bee49b625e2d822w9ak"]
+    },
+    "Floor 3: Main room 1": {
+      "fcu_device_ids": ["ac_FCU-3-03", "ac_FCU-3-04", "ac_FCU-3-05", "ac_FCU-3-09", "ac_FCU-3-10", "ac_FCU-3-11"],
+      "iaq_device_ids": ["eb78b57da1ceafe607kgto", "ebb6fcb2bd753bd116idd1"]
+    },
+    "Floor 3: Main room 2": {
+      "fcu_device_ids": ["ac_FCU-3-06", "ac_FCU-3-07", "ac_FCU-3-08", "ac_FCU-3-12", "ac_FCU-3-14"],
+      "iaq_device_ids": ["ebf9cb1b68efc7a0c3mzzl", "eb79a5ed37dee5a09eexpa", "eb667983c9074c5da3etsu"]
+    },
+    "Floor 3: Main room 3": {
+      "fcu_device_ids": ["ac_FCU-3-20", "ac_FCU-3-21", "ac_FCU-3-27", "ac_FCU-3-28", "ac_FCU-3-29"],
+      "iaq_device_ids": ["ebbc7aa29cc05fc34a5cwc", "eb182e28ac30b3d6c7uc2g"]
+    },
+    "Floor 3: Main room 4": {
+      "fcu_device_ids": ["ac_FCU-3-13", "ac_FCU-3-18", "ac_FCU-3-19", "ac_FCU-3-26"],
+      "iaq_device_ids": ["eb9c20951747a0adfbsjk1", "eb184e69c8183f24d6fn4m"]
+    },
+    "Floor 3: Main room 5": {
+      "fcu_device_ids": ["ac_FCU-3-15", "ac_FCU-3-16", "ac_FCU-3-17", "ac_FCU-3-22", "ac_FCU-3-23", "ac_FCU-3-24", "ac_FCU-3-25"],
+      "iaq_device_ids": ["ebe7b3c423ffdfa79alqxy", "ebe07d3c9beba694d2rzak"]
+    }
+  }
+}
