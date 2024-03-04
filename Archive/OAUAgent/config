@@ -1,10 +1,10 @@
 {
   "cratedb_config": {
     "host": "localhost",
-    "port": "4201",
+    "port": "4200",
     "username": "alto",
     "password": "Magicalmint@636",
-    "table_name": "raw_data"
+    "table_name": "daikin"
   },
   "automation": {
     "CO2_on": 1000,
@@ -12,72 +12,28 @@
     "trigger_interval": 1
   },
   "thermal_zone_mapping": {
-    "1-01": {
-      "oau_device_ids": ["ac_hrv-1-01"],
+    "1-02": {
+      "oau_device_ids": ["DaikinCCC-OAU-1-01"],
       "iaq_device_ids": [
-        "eb7cfcbeaedc26dd89d3ql", 
-        "ebaa186a60f8833e4dcziw", 
-        "ebd302a674c3bf1a00nixx"]
-    },
-    "2-03": {
-      "oau_device_ids": ["ac_hrv-2-03"],
-      "iaq_device_ids": [
-        "ebf07b9d3cbaffcc86ejzv",
-        "eb1ca8fb2f1c913472to7o",
-        "ebf9b609ed6478144byhkj",
-        "eb4d1a7ec49c8052bcrzhf"
-    ]
-    },
-    "2-02": {
-      "oau_device_ids": ["ac_hrv-2-02"],
-      "iaq_device_ids": [
-        "eb14f03f3aa4536b5bwxxr" 
-      ]
+        "eb7ca712c672610d99z8bw", 
+        "ebd57f4fd41b31dd1fdd7o"]
     },
     "2-01": {
-      "oau_device_ids": ["ac_hrv-2-01"],
+      "oau_device_ids": ["DaikinCCC-OAU-2-01"],
       "iaq_device_ids": [
-        "eb5c6ff6a5cfd06550yy1z",
-        "ebc6d9ccb34b7c1193jlov",
-        "eb36ea08da9433df3ahkvd",
-        "ebcd4b61dea6f3cfc7pqrh",
-        "eb00d4aed83a80fed6crci"
+        "eba1f8ea2aebc71603y9ro"
       ]
     },
-    "3-01": {
-      "oau_device_ids": ["ac_hrv-3-01"],
+    "2-02": {
+      "oau_device_ids": ["DaikinCCC-OAU-2-02"],
       "iaq_device_ids": [
-        "eb78b57da1ceafe607kgto",
-        "ebb6fcb2bd753bd116idd1"
+        "ebda07d30ee6be7c13zbbd"
       ]
     },
-    "3-02": {
-      "oau_device_ids": ["ac_hrv-3-02"],
+    "2-03": {
+      "oau_device_ids": ["DaikinCCC-OAU-2-03"],
       "iaq_device_ids": [
-        "eb78ee267e4762d61fu4vu",
-        "ebf9cb1b68efc7a0c3mzzl",
-        "eb667983c9074c5da3etsu",
-        "eb79a5ed37dee5a09eexpa"
-      ]
-    },
-    "3-03": {
-      "oau_device_ids": ["ac_hrv-3-03"],
-      "iaq_device_ids": [
-        "eb9c20951747a0adfbsjk1",
-        "ebe7b3c423ffdfa79alqxy",
-        "ebe07d3c9beba694d2rzak",
-        "eb184e69c8183f24d6fn4m"
-      ]
-    },
-    "3-04": {
-      "oau_device_ids": ["ac_hrv-3-04"],
-      "iaq_device_ids": ["eb5bee49b625e2d822w9ak"]
-    },
-    "3-05": {
-      "oau_device_ids": ["ac_hrv-3-05"],
-      "iaq_device_ids": [
-        "ebbc7aa29cc05fc34a5cwc",
-        "eb182e28ac30b3d6c7uc2g"
+        "ebacee8a441fba9d05xx84"
       ]
     }
   }
