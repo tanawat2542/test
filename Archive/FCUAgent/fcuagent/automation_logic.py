@@ -81,10 +81,10 @@ def fcu_control_logics(cratedb_config: dict(), iaq_device_ids: list, fcu_device_
         
         # preprocess data
         fcu_df = fcu_df.groupby('device_id').resample('5T', label='right').agg({
-            # DEDE data schema (oper, set_temperature, room_temperature)
-            'oper': 'last',
+            # DEDE data schema (mode, set_temperature, temperature)
+            'mode': 'last',
             'set_temperature': 'last',
-            'room_temperature': 'mean'
+            'temperature': 'mean'
         }).reset_index()
         
         # check recent 30-min FCU mode
@@ -128,11 +128,11 @@ def fcu_control_logics(cratedb_config: dict(), iaq_device_ids: list, fcu_device_
         iaq_df['aPMV'] = iaq_df.apply(lambda x: a_pmv(tdb=x.temperature, tr=x.temperature, vr=vr, rh=x.humidity, met=met, clo=clo, a_coefficient=a_coefficient, wme=0), axis=1)
 
         fcu_df = fcu_df.groupby('device_id').resample('5T', label='right').agg({
-            # DEDE data schema (oper, set_temperature, room_temperature)
-            # Original data schema (fan, mode, room_temperature, set_temperature)
-            'oper': 'last',
+            # DEDE data schema (mode, set_temperature, temperature)
+            # Original data schema (fan, mode, temperature, set_temperature)
+            'mode': 'last',
             'set_temperature': 'last',
-            'room_temperature': 'mean'
+            'temperature': 'mean'
         }).reset_index()
 
         # 2. identify aPMV zone
