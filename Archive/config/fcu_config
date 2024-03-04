@@ -1,0 +1,181 @@
+{
+  
+  "cratedb_config": {
+    "host": "localhost",
+    "port": "4200",
+    "table_name": "raw_data"
+  },
+  
+  "automation": {
+    "aPMV_min": 0,
+    "aPMV_target": 0.25,
+    "aPMV_max": 0.5,
+    "rH_max": 60,
+    "trigger_interval": 2,  
+    "lookback_interval": 15,  
+    "feedback_expired_minutes": 15,
+    "feedback_mqtt_topic": "rl_correct/subiot/example/command"
+  },
+  
+  "apmv": {
+    "vr": 0.1,
+    "met": 1.1,
+    "clo": 0.7,
+    "a_coefficient": 0.2
+  },
+  
+  "thermal_zone_mapping": {
+    "Floor 1: 1": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-22"],
+      "iaq_device_ids": ["eb91020bbf1dc377e5bxb4"]
+    },
+    "Floor 1: 2": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-02"],
+      "iaq_device_ids": ["ebab65495c6233a3ecfex1"]
+    },
+    "Floor 1: 3": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-03"],
+      "iaq_device_ids": ["ebcfad00ae7ffacf5coyrl"]
+    },
+    "Floor 1: 4": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-04"],
+      "iaq_device_ids": ["eb58b62396473a1287ojam"]
+    },
+    "Floor 1: 5": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-05"],
+      "iaq_device_ids": ["ebea85d39f4272b175clhh"]
+    },
+    "Floor 1: 6": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-06"],
+      "iaq_device_ids": ["ebd82875334b345a7ayn6n"]
+    },
+    "Floor 1: 7": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-07"],
+      "iaq_device_ids": ["eb356f6201665705e4cr36"]
+    },
+    "Floor 1: 8": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-08"],
+      "iaq_device_ids": ["eb00db71cc034d77f2nguw"]
+    },
+    "Floor 1: 9": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-21"],
+      "iaq_device_ids": ["ebd12b7177d5e31186exf3"]
+    },
+    "Floor 1: 10": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-18"],
+      "iaq_device_ids": ["eb469134c83d806bc2xk86"]
+    },
+    "Floor 1: 11": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-19"],
+      "iaq_device_ids": ["eb7ca712c672610d99z8bw"]
+    },
+    "Floor 1: 12": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-20"],
+      "iaq_device_ids": ["eba7cec590ad860668uqgv"]
+    },
+    "Floor 1: 13": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-09"],
+      "iaq_device_ids": ["ebd06f07a5e35f0d89cft7"]
+    },
+    "Floor 1: 14": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-01"],
+      "iaq_device_ids": ["eb7a71c9fc4f7837c6wxjg"]
+    },
+    "Floor 1: 15": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-15"],
+      "iaq_device_ids": ["eb2f60193ac6f76171pywj"]
+    },
+    "Floor 1: 16": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-16"],
+      "iaq_device_ids": ["1210210009"]
+    },
+    "Floor 1: 17": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-17"],
+      "iaq_device_ids": ["ebaf51dd6ea7174066jeba"]
+    },
+    "Floor 1: 18": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-12"],
+      "iaq_device_ids": ["eb266cba7d62b9ac0a8pwm"]
+    },
+    "Floor 1: 19": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-13"],
+      "iaq_device_ids": ["ebd57f4fd41b31dd1fdd7o"]
+    },
+    "Floor 1: 20": {
+      "fcu_device_ids": ["DaikinCCC-FCU-1-14"],
+      "iaq_device_ids": ["eb2cc75154a2c70a46ioig"]
+    },
+      "Floor 2: 1": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-01"],
+        "iaq_device_ids": ["eb3b3f106dc87c7b01jvp4"]
+      },
+      "Floor 2: 2": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-02"],
+        "iaq_device_ids": ["eb5e4c3fbff6557cc8rsea"]
+      },
+      "Floor 2: 3": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-07"],
+        "iaq_device_ids": ["eb8fe64b268e5ebccdvs64"]
+      },
+      "Floor 2: 4": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-08"],
+        "iaq_device_ids": ["ebb7a6858d98bc93f3jmo0"]
+      },
+      "Floor 2: 5": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-20"],
+        "iaq_device_ids": ["eb1c9f10dd34b30c6avo4z"]
+      },
+      "Floor 2: 6": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-03"],
+        "iaq_device_ids": ["ebf8783eba7db698a9zc53"]
+      },
+      "Floor 2: 7": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-04"],
+        "iaq_device_ids": ["ebda07d30ee6be7c13zbbd"]
+      },
+      "Floor 2: 8": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-09"],
+        "iaq_device_ids": ["eb1628669cbd8ee0e8strx"]
+      },
+      "Floor 2: 9": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-10"],
+        "iaq_device_ids": ["ebacee8a441fba9d05xx84"]
+      },
+      "Floor 2: 10": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-18"],
+        "iaq_device_ids": ["ebf8c6e6d4131e1bcc2cz0"]
+      },
+      "Floor 2: 11": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-19"],
+        "iaq_device_ids": ["eb2e93a68731a6065bidbr"]
+      },
+      "Floor 2: 12": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-05"],
+        "iaq_device_ids": ["eb9703dbc6bea37d77d57z"]
+      },
+      "Floor 2: 13": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-06"],
+        "iaq_device_ids": ["ebf283f908e050c46axtaw"]
+      },
+      "Floor 2: 14": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-11"],
+        "iaq_device_ids": ["eb2e42fe69d3bcee98axc9"]
+      },
+      "Floor 2: 15": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-12"],
+        "iaq_device_ids": ["eb22c2f93f0393c380cf16"]
+      },
+      "Floor 2: 16": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-13"],
+        "iaq_device_ids": ["eba1f8ea2aebc71603y9ro"]
+      },
+      "Floor 2: 17": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-14"],
+        "iaq_device_ids": ["eba1f8ea2aebc71603y9ro"]
+      },
+      "Floor 2: 18": {
+        "fcu_device_ids": ["DaikinCCC-FCU-2-15"],
+        "iaq_device_ids": ["eb918ff563509b9c10zdki"]
+      }
+  }
+}

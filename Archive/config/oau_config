@@ -1,0 +1,40 @@
+{
+  "cratedb_config": {
+    "host": "localhost",
+    "port": "4200",
+    "username": "alto",
+    "password": "Magicalmint@636",
+    "table_name": "raw_data"
+  },
+  "automation": {
+    "CO2_on": 1000,
+    "CO2_off": 800,
+    "trigger_interval": 1
+  },
+  "thermal_zone_mapping": {
+    "1-02": {
+      "oau_device_ids": ["DaikinCCC-OAU-1-01"],
+      "iaq_device_ids": [
+        "eb7ca712c672610d99z8bw", 
+        "ebd57f4fd41b31dd1fdd7o"]
+    },
+    "2-01": {
+      "oau_device_ids": ["DaikinCCC-OAU-2-01"],
+      "iaq_device_ids": [
+        "eba1f8ea2aebc71603y9ro"
+      ]
+    },
+    "2-02": {
+      "oau_device_ids": ["DaikinCCC-OAU-2-02"],
+      "iaq_device_ids": [
+        "ebda07d30ee6be7c13zbbd"
+      ]
+    },
+    "2-03": {
+      "oau_device_ids": ["DaikinCCC-OAU-2-03"],
+      "iaq_device_ids": [
+        "ebacee8a441fba9d05xx84"
+      ]
+    }
+  }
+}
